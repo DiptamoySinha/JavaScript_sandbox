@@ -41,7 +41,7 @@ function createList(arr)
                 e.target.style.backgroundColor = getColor(colors);
                 li.innerText = `${element} (See, My backgroud is changing)`;
                 e.target.id = Number(li.id) + 1;
-            }, 1000)
+            }, 500 + (index * 100))
         }
 
         })
