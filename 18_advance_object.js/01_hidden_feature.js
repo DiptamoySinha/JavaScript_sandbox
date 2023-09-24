@@ -4,20 +4,18 @@ const chai = {
     isAvailable: true
 }
 
-console.log(Object.getOwnPropertyDescriptor(chai, 'name'))
-
+// console.log(Object.getOwnPropertyDescriptor(chai, 'name'))
 // output:
 // {
 //     value: 'masala chai',
 //     writable: true,
 //     enumerable: true,
 //     configurable: true
-//  }
+//  } c c x
 
-Object.defineProperty(chai, 'name', {
+Object.defineProperty(chai, 'price', {
     writable: false
 })
 
-chai.name = "ginger chai"
-
+chai.price = 900
 console.log(chai)

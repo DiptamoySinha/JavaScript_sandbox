@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical scope | Closure</title>
+</head>
+<body>
+    
+    <button id="Orange">Orange</button>
+    <button id="Green">Green</button>
+
+    <script>
+        document.getElementById('Orange').onclick = changeColor('Orange')
+
+        document.getElementById('Green').onclick = changeColor('Green')
+
+        function changeColor(color)
+        {
+            // this returned function will have the outer function scope. so the color variable can be accessed by inner function
+            return function() {
+                document.body.style.backgroundColor = color;
+            }
+        }
+    </script>
+</body>
+</html>
