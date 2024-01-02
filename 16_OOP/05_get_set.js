@@ -20,7 +20,7 @@ class Student
 
 function Teacher(email, subject)
 {
-    // this._email = email
+    // this.email = email
     // this._subject = subject
 
     Object.defineProperty(this, 'email', {
@@ -42,6 +42,11 @@ function Teacher(email, subject)
     })
 }
 
-const s1 = new Student()
-s1.name = "diptamoy"
-console.log(s1.name)
+const t1 = new Teacher()
+t1.email = "asds"
+t1.password = "popo"
+console.log(t1)
+
+// const s1 = new Student();
+// // s1.name = 'mark';
+// console.log(s1)

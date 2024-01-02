@@ -30,17 +30,17 @@ function createList(arr)
 
         li.addEventListener('click', function(e) {
 
-            if(e.target.id > 0){
+            if(li.id > 0){
                 clearInterval(intrval);
-                e.target.innerText = element + "(please, click on me)";
-                e.target.id = 0;
+                li.innerText = element + "(please, click on me)";
+                li.id = 0;
             }
             else{
 
             intrval = setInterval(() => {
-                e.target.style.backgroundColor = getColor(colors);
+                li.style.backgroundColor = getColor(colors);
                 li.innerText = `${element} (See, My backgroud is changing)`;
-                e.target.id = Number(li.id) + 1;
+                li.id = Number(li.id) + 1;
             }, 500 + (index * 100))
         }
 

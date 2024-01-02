@@ -7,6 +7,7 @@ function User(name, quote, isLogged)
 
 User.info = "This is user constructor function"
 
+
 const userOne = new User("Diptamoy",  ["Every Dark Cloud has the silverline"], true)
 const userTwo = new User("Mark",  ["Hardwork mean how much I push myself to get the work done"], true)
 

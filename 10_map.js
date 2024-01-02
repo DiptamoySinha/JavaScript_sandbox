@@ -34,6 +34,10 @@ const myObj = {
 //     console.log(` ${key} : ${str[key]}`);
 // }
 
-map.forEach( k => {
-    console.log(k);
-})
+
+// map.forEach( k => {
+//     console.log(k);
+// })
+
+
+console.log(typeof (() => {return 'a'})())

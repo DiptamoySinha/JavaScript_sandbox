@@ -35,8 +35,9 @@
 
 
 const currentDate = new Date();
-const endDate = Date.UTC(2023, 8, 20, 0, 0, 0);
+// const endDate = Date.UTC(2023, 8, 20, 0, 0, 0);
 // endDate.setUTCFullYear(2023);
 // endDate.setUTCMonth(8);
 // endDate.setUTCDate(25);
 // const diff = Math.ceil(Math.abs(endDate - today) / (1000 * 60 * 60))
+

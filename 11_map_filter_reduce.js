@@ -11,7 +11,9 @@ console.log(`arr2: ${arr2}`);
 console.log();
 
 const initial = 0;
-const total = arr.reduce((accumulator, currentValue, currentIndex=1) => {
+const total = arr.reduce((accumulator, currentValue, currentIndex) => {
     console.log(`accumulator: ${accumulator}, currentValue: ${currentValue}, currentIndex: ${currentIndex}`);
     return accumulator + currentValue;
-}, 1)
+}, initial)
+
+console.log(total);

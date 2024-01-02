@@ -26,10 +26,10 @@ function Baby(weight)
 }
 
 
-Baby.__proto__ = Human
+// Baby.__proto__ = Human
 
 const b1 = new Baby("1.5kg");
 const h1 = new Human(2,2);
 
 b1.__proto__ = h1
-console.log(b1)
+console.log(b1.hand)
